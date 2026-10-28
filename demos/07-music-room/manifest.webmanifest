@@ -1,0 +1,16 @@
+{
+  "name": "Music Room · Voice House",
+  "short_name": "Music Room",
+  "description": "Mabel at the piano: four speeds, measured rests, slow and fast, lines fitted to 3, 5, 8 s.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#3d1f2a",
+  "theme_color": "#3d1f2a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

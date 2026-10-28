@@ -1,0 +1,62 @@
+{
+ "no": "16",
+ "slug": "16-study",
+ "title": "The Study",
+ "feature": "Speech to text",
+ "public": true,
+ "what": "The story turned back into text by a speech-recognition model running on this PC: every word with its start and end time, and subtitle files ready to use.",
+ "inputs": [
+  {
+   "label": "Audio",
+   "value": "the bedtime story from the children's room (80 s)"
+  },
+  {
+   "label": "Model",
+   "value": "Whisper large-v3 turbo (faster-whisper), local"
+  },
+  {
+   "label": "Word error rate",
+   "value": "4.5% against the real script (244 words)"
+  },
+  {
+   "label": "Subtitles",
+   "value": "story.srt and story.vtt (download below)"
+  }
+ ],
+ "endpoint": "POST /v1/audio/transcriptions (OpenAI-compatible)",
+ "snippet": "from openai import OpenAI\nclient = OpenAI(base_url=\"http://127.0.0.1:3900/v1\", api_key=\"local\")\ntr = client.audio.transcriptions.create(model=\"whisper-1\",\n    file=open(\"story.mp3\", \"rb\"), response_format=\"verbose_json\",\n    timestamp_granularities=[\"word\"])\nprint(tr.words[0])  # word, start, end",
+ "checks": [
+  "Word error rate 4.5%"
+ ],
+ "work": "transcribed",
+ "downloads": [
+  {
+   "label": "Subtitles (SRT)",
+   "file": "media/story.srt"
+  },
+  {
+   "label": "Subtitles (VTT)",
+   "file": "media/story.vtt"
+  }
+ ],
+ "meter": {
+  "audio_s": 79.55,
+  "gen_s": 5.61,
+  "rtf": 0.071,
+  "wall_s": 5.94,
+  "energy_wh": 0.1514,
+  "above_idle_wh": 0.0875,
+  "avg_w": 91.7,
+  "peak_w": 130.7,
+  "peak_vram_mb": 7295,
+  "gpu_busy_s": 2.54,
+  "takes": 3,
+  "measured": "2026-10-28 11:09:50"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

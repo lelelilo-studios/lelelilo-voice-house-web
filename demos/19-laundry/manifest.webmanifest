@@ -1,0 +1,16 @@
+{
+  "name": "The Laundry · Voice House",
+  "short_name": "The Laundry",
+  "description": "A story lost in a noisy wash: spin it clean and each voice rises out as a ribbon.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#1f3a3a",
+  "theme_color": "#1f3a3a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

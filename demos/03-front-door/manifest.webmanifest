@@ -1,0 +1,16 @@
+{
+  "name": "Front Door · Voice House",
+  "short_name": "Front Door",
+  "description": "Each seed rings in a new plush stranger; the same seed brings the same one back.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#2f5a4a",
+  "theme_color": "#2f5a4a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

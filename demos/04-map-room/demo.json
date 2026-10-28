@@ -1,0 +1,51 @@
+{
+ "no": "04",
+ "slug": "04-map-room",
+ "title": "Map Room",
+ "feature": "Accents and dialects",
+ "public": true,
+ "what": "Ten English accents and twelve Chinese dialects, each one a single tag in the voice's design: the same words, said the way they are said in another place.",
+ "inputs": [
+  {
+   "label": "English line",
+   "value": "Excuse me, which way to the map room? I think I've walked past it twice."
+  },
+  {
+   "label": "Accents",
+   "value": "american, british, australian, canadian, indian, chinese, japanese, korean, russian, portuguese"
+  },
+  {
+   "label": "Chinese line",
+   "value": "欢迎来到声音之家。今晚每一盏灯都亮着，请进来坐坐。 (Welcome to the Voice House. Every lamp is lit tonight, so come in and sit for a while.)"
+  },
+  {
+   "label": "Dialects",
+   "value": "河南话 Henan, 陕西话 Shaanxi, 四川话 Sichuan, 贵州话 Guizhou, 云南话 Yunnan, 桂林话 Guilin, 济南话 Jinan, 石家庄话 Shijiazhuang, 甘肃话 Gansu, 宁夏话 Ningxia, 青岛话 Qingdao, 东北话 Northeastern"
+  }
+ ],
+ "endpoint": "POST /generate (instruct includes the accent or dialect tag)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"Chinese\",\n    \"instruct\": \"female, middle-aged, 四川话\",\n    \"seed\": 4452,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "checks": [
+  "Whisper followed every English accent; the dialects are checked loosely (they change the words' sounds on purpose)"
+ ],
+ "meter": {
+  "audio_s": 131.91,
+  "gen_s": 10.49,
+  "rtf": 0.08,
+  "wall_s": 15.99,
+  "energy_wh": 0.4069,
+  "above_idle_wh": 0.2315,
+  "avg_w": 91.6,
+  "peak_w": 89.7,
+  "peak_vram_mb": 6572,
+  "gpu_busy_s": 4.73,
+  "takes": 32,
+  "measured": "2026-10-28 11:00:58"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

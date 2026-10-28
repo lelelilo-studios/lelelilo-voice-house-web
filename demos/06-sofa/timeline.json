@@ -1,0 +1,858 @@
+{
+ "v": 1,
+ "duration": 31.923,
+ "tracks": [
+  {
+   "name": "sofa",
+   "file": "media/sofa.mp3",
+   "duration": 31.923,
+   "env_fps": 60,
+   "env": "DxAgOEVFQ0tKPTcyLSYfHxsRDAwucrrj7eHRxrWaaT1XnsjX2dzEncHUwpmEeU0tS5CZcEA/P0BBSU+HwdjWzMzT0MzHv73Aq3uftJxoOS1mqMTFuKqnoquwqaqpi0I2PERXaXuktbCzonCTooVQQFKVtMnOzNXOz9HO1MrIwKqXe4OWo62qqaWUkINdJhQNcYJtSzonEAcGAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANEBUkT21xdYB5bmNPSENMWWVlV00/MCMaFxgiTs/46cadWR8VGCs/TFZWVFNNSUJCRToTWMz///zp2MGjg1RQi8rb2NvZvJzB1dTFsbSkZS4zQ2eTk2Y/PUFFS1RXw/P57NzY3Onv6uno1a2bqbivfj8wpdfn6Ojo59vGw8vDrIREPUhdb47M8fj49NSco6Z9Z3m43+jv+fvx5tC4tZ6kvMrX0cO9oGcuF3GDfWpHMQ8SGh8hIB0YDwoGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwOEBgjapCcrbnAzNnYysG3sKWYjoWJhXRnYFxPUWCAjZGmsb3W1MrTwqCJqsrXzcG3nJeZu8vHxsDDwrW2sqixtqSXkpqdmJ6owdDS1bt/WUtReJiiq7O3uaqIbWZedZSelZ2glKWrmoa+w4pxUz9Buejw16jD4efESTxvts6uYS0ZJLHPs3xnlbzArZJ9e4KLhnaArsmzo727vLGfppFeKjymroyaqL/ErKawoXVJT4S1wraxrquonYNhXlZORTEmGwkIBgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICwsQGyAgHiAiHRkbGhgVFBIRDgsKCgsRO4G8zMjT4uvr28S9tZ6EcV9SV2RxhafA2OHb2tfb2MCdfW1dWVVLUFhhcXJZOT9APTs4isnc2tjV3tzQwKOYmpeItNXNspuitsHEuq6ztLG1wcfJ19/i59rIrYGdrq61tbO2sJiJqbuykV6EqKN1JQ4NZo2Sg4eIufH////buru+v8Kvj6OskGNCRkVCOy4bFA0HAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJDA0VHB4cGxwcHBsZGBkZFxQTERAQEREWXoWnu8HDw8O8rZp+Xj8iEA0QbKO6wMfR1M7Jv7WvpJByUjUfEA8KCgpEeKmtjYCBjaLE2dTBq6GmtsDAxruTe6K/sYF9n66roZycoKCdm5ySbBVXhbTNz8nM1dLIx7iRhZaghTMRVXR6a4GzvLChdkFFgqKZiZuUeZ7AxKJAeJiwtKyvrqqmkGhPNhwNCwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA0OFzFAR0pEWMDt+f7/7rl0PiASCQkKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJHVFwiaC1t6jF29XQ4e3p5tfUyKykjIONh4W7x5gxNGKlvby2o5C93Ofnxq7Iupivw7eTen2MnqisuLCYmJ2lqK/N0ryspqitontVNjIwMSwtNUtUuuji0M3Bp31pjb7IpmZBRDgPD5vKxq/j7tC3tM/Y1r+SlaOXl7K5m25ni623t7uznH1jZmFUPy8ZDggEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoNDx8wMywnJCAaFQ8ODw5Rmcba5O/179Oxm3BSPDQsJyAbFw8NDAsKCgodYHqTp7WxpZaKfGyPq66hoJ6dm5+bindXPiFEXnyOmaWvqpd5WYuepqaipaaekYJbKxUPDBEaS4K5wppeMTt3iqW8oj4eEUZ+glksSYCJg4yiuraQhqOkm5aTj5KipqGclpaSfV9NQjYkGAoHBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJDRAbNUFHRkZFQDgtKCUgFhIRFB49c5issbu+u7q4rpmDcGBda4u+3s+UWyxYi56ahFAlEQwMO2SDhGycwdHT0NbQq4m1y8q/v7+1tq2ol3egvK13XHNvVlKLrrq8tauhiE4dFidSdZerv9PW1d/j4+Tj28asm4luXVBMSz0wLSYdCgcGAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYKCw8bHx8gISAgHhsZGBYUEg8ODAoJCQoNGDlTX3KEh5arq6iouse4oqSulE4fD1BycHKJnqussKuWdywzOTQxNT1Ql6qqpp6foaWTfZmvtraum3djkrTAs6qeczkWHzVzio+SmpuajWlVXmZqZlmAt8O0qpZpKiAUDxZnl6ekpKejk4aBfGMzQ1RlZEwyLigmKCgonNHRrIM/IR0bGTeszcGZZCwSEQ4NDCk9Ox8JBw==",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "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"
+  }
+ ],
+ "words": [
+  {
+   "w": "Oh,",
+   "t0": 0.0,
+   "t1": 0.46,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "that",
+   "t0": 0.56,
+   "t1": 0.66,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "is",
+   "t0": 0.66,
+   "t1": 0.76,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "the",
+   "t0": 0.76,
+   "t1": 0.88,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "funniest",
+   "t0": 0.88,
+   "t1": 1.18,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "thing",
+   "t0": 1.18,
+   "t1": 1.4,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "I've",
+   "t0": 1.4,
+   "t1": 1.62,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "heard",
+   "t0": 1.62,
+   "t1": 1.78,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "all",
+   "t0": 1.78,
+   "t1": 2.02,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "week!",
+   "t0": 2.02,
+   "t1": 2.34,
+   "track": "sofa",
+   "spk": "plain",
+   "seg": 0
+  },
+  {
+   "w": "Oh,",
+   "t0": 3.94,
+   "t1": 4.3,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "that",
+   "t0": 4.42,
+   "t1": 4.52,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "is",
+   "t0": 4.52,
+   "t1": 4.64,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "the",
+   "t0": 4.64,
+   "t1": 4.78,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "funniest",
+   "t0": 4.78,
+   "t1": 5.08,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "thing",
+   "t0": 5.08,
+   "t1": 5.32,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "I've",
+   "t0": 5.32,
+   "t1": 5.52,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "heard",
+   "t0": 5.52,
+   "t1": 5.7,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "all",
+   "t0": 5.7,
+   "t1": 5.88,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "week!",
+   "t0": 5.88,
+   "t1": 6.16,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 1
+  },
+  {
+   "w": "Another",
+   "t0": 7.302,
+   "t1": 7.962,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "rainy",
+   "t0": 7.962,
+   "t1": 8.302,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "evening,",
+   "t0": 8.302,
+   "t1": 8.682,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "and",
+   "t0": 8.682,
+   "t1": 8.922,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "the",
+   "t0": 8.922,
+   "t1": 9.042,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "biscuit",
+   "t0": 9.042,
+   "t1": 9.342,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "tin",
+   "t0": 9.342,
+   "t1": 9.562,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "is",
+   "t0": 9.562,
+   "t1": 9.742,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "empty",
+   "t0": 9.742,
+   "t1": 9.982,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "again.",
+   "t0": 9.982,
+   "t1": 10.282,
+   "track": "sofa",
+   "spk": "sigh",
+   "seg": 2
+  },
+  {
+   "w": "Oh!",
+   "t0": 12.067,
+   "t1": 12.187,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "You",
+   "t0": 12.347,
+   "t1": 12.427,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "found",
+   "t0": 12.427,
+   "t1": 12.727,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "the",
+   "t0": 12.727,
+   "t1": 12.867,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "remote",
+   "t0": 12.867,
+   "t1": 13.147,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "under",
+   "t0": 13.147,
+   "t1": 13.387,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "the",
+   "t0": 13.387,
+   "t1": 13.547,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "cushion!",
+   "t0": 13.547,
+   "t1": 13.867,
+   "track": "sofa",
+   "spk": "surprise-oh",
+   "seg": 3
+  },
+  {
+   "w": "Ah?",
+   "t0": 15.664,
+   "t1": 15.804,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "Did",
+   "t0": 16.004,
+   "t1": 16.124,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "you",
+   "t0": 16.124,
+   "t1": 16.224,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "hear",
+   "t0": 16.224,
+   "t1": 16.344,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "the",
+   "t0": 16.344,
+   "t1": 16.504,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "stairs",
+   "t0": 16.504,
+   "t1": 16.904,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "creak",
+   "t0": 16.904,
+   "t1": 17.244,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "just",
+   "t0": 17.244,
+   "t1": 17.344,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "now?",
+   "t0": 17.344,
+   "t1": 17.564,
+   "track": "sofa",
+   "spk": "question-ah",
+   "seg": 4
+  },
+  {
+   "w": "Someone",
+   "t0": 19.496,
+   "t1": 19.876,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "has",
+   "t0": 19.876,
+   "t1": 19.996,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "been",
+   "t0": 19.996,
+   "t1": 20.116,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "sitting",
+   "t0": 20.116,
+   "t1": 20.336,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "on",
+   "t0": 20.336,
+   "t1": 20.516,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "my",
+   "t0": 20.516,
+   "t1": 20.736,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "favourite",
+   "t0": 20.736,
+   "t1": 21.078,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "cushion",
+   "t0": 21.116,
+   "t1": 21.476,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "again.",
+   "t0": 21.476,
+   "t1": 21.676,
+   "track": "sofa",
+   "spk": "dissatisfaction-hnn",
+   "seg": 5
+  },
+  {
+   "w": "Yes,",
+   "t0": 23.437,
+   "t1": 23.697,
+   "track": "sofa",
+   "spk": "confirmation-en",
+   "seg": 6
+  },
+  {
+   "w": "yes.",
+   "t0": 23.897,
+   "t1": 24.097,
+   "track": "sofa",
+   "spk": "confirmation-en",
+   "seg": 6
+  },
+  {
+   "w": "I'll",
+   "t0": 24.297,
+   "t1": 24.437,
+   "track": "sofa",
+   "spk": "confirmation-en",
+   "seg": 6
+  },
+  {
+   "w": "put",
+   "t0": 24.437,
+   "t1": 24.557,
+   "track": "sofa",
+   "spk": "confirmation-en",
+   "seg": 6
+  },
+  {
+   "w": "the",
+   "t0": 24.557,
+   "t1": 24.657,
+   "track": "sofa",
+   "spk": "confirmation-en",
+   "seg": 6
+  },
+  {
+   "w": "kettle",
+   "t0": 24.657,
+   "t1": 24.877,
+   "track": "sofa",
+   "spk": "confirmation-en",
+   "seg": 6
+  },
+  {
+   "w": "on.",
+   "t0": 24.877,
+   "t1": 25.097,
+   "track": "sofa",
+   "spk": "confirmation-en",
+   "seg": 6
+  },
+  {
+   "w": "Look",
+   "t0": 26.658,
+   "t1": 26.758,
+   "track": "sofa",
+   "spk": "surprise-wa",
+   "seg": 7
+  },
+  {
+   "w": "at",
+   "t0": 26.758,
+   "t1": 26.878,
+   "track": "sofa",
+   "spk": "surprise-wa",
+   "seg": 7
+  },
+  {
+   "w": "the",
+   "t0": 26.878,
+   "t1": 27.018,
+   "track": "sofa",
+   "spk": "surprise-wa",
+   "seg": 7
+  },
+  {
+   "w": "size",
+   "t0": 27.018,
+   "t1": 27.318,
+   "track": "sofa",
+   "spk": "surprise-wa",
+   "seg": 7
+  },
+  {
+   "w": "of",
+   "t0": 27.318,
+   "t1": 27.478,
+   "track": "sofa",
+   "spk": "surprise-wa",
+   "seg": 7
+  },
+  {
+   "w": "that",
+   "t0": 27.478,
+   "t1": 27.638,
+   "track": "sofa",
+   "spk": "surprise-wa",
+   "seg": 7
+  },
+  {
+   "w": "moon!",
+   "t0": 27.638,
+   "t1": 27.958,
+   "track": "sofa",
+   "spk": "surprise-wa",
+   "seg": 7
+  },
+  {
+   "w": "And",
+   "t0": 29.051,
+   "t1": 29.531,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "then",
+   "t0": 29.531,
+   "t1": 29.631,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "the",
+   "t0": 29.631,
+   "t1": 29.751,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "cat",
+   "t0": 29.751,
+   "t1": 29.991,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "fell",
+   "t0": 29.991,
+   "t1": 30.211,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "asleep",
+   "t0": 30.211,
+   "t1": 30.511,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "in",
+   "t0": 30.511,
+   "t1": 30.671,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "the",
+   "t0": 30.671,
+   "t1": 30.751,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "fruit",
+   "t0": 30.751,
+   "t1": 30.951,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  },
+  {
+   "w": "bowl.",
+   "t0": 30.951,
+   "t1": 31.211,
+   "track": "sofa",
+   "spk": "laughter",
+   "seg": 8
+  }
+ ],
+ "segments": [
+  {
+   "t0": 0.0,
+   "t1": 2.54,
+   "label": "no tag",
+   "spk": "plain",
+   "text": "Oh, that is the funniest thing I've heard all week!",
+   "kind": "line",
+   "i": 0,
+   "seed": 606,
+   "gen_s": 0.66,
+   "dur": 2.54,
+   "rtf": 0.26,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "",
+   "at": "none"
+  },
+  {
+   "t0": 3.34,
+   "t1": 6.422,
+   "label": "[laughter]",
+   "spk": "laughter",
+   "text": "[laughter] Oh, that is the funniest thing I've heard all week!",
+   "kind": "line",
+   "i": 1,
+   "seed": 610,
+   "gen_s": 0.66,
+   "dur": 3.08,
+   "rtf": 0.214,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "laughter",
+   "at": "start"
+  },
+  {
+   "t0": 7.222,
+   "t1": 10.487,
+   "label": "[sigh]",
+   "spk": "sigh",
+   "text": "[sigh] Another rainy evening, and the biscuit tin is empty again.",
+   "kind": "line",
+   "i": 2,
+   "seed": 611,
+   "gen_s": 0.68,
+   "dur": 3.27,
+   "rtf": 0.208,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "sigh",
+   "at": "start"
+  },
+  {
+   "t0": 11.287,
+   "t1": 14.124,
+   "label": "[surprise-oh]",
+   "spk": "surprise-oh",
+   "text": "[surprise-oh] Oh! You found the remote under the cushion!",
+   "kind": "line",
+   "i": 3,
+   "seed": 612,
+   "gen_s": 0.7,
+   "dur": 2.84,
+   "rtf": 0.246,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "surprise-oh",
+   "at": "start"
+  },
+  {
+   "t0": 14.924,
+   "t1": 17.696,
+   "label": "[question-ah]",
+   "spk": "question-ah",
+   "text": "[question-ah] Ah? Did you hear the stairs creak just now?",
+   "kind": "line",
+   "i": 4,
+   "seed": 613,
+   "gen_s": 0.29,
+   "dur": 2.77,
+   "rtf": 0.105,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "question-ah",
+   "at": "start"
+  },
+  {
+   "t0": 18.496,
+   "t1": 21.897,
+   "label": "[dissatisfaction-hnn]",
+   "spk": "dissatisfaction-hnn",
+   "text": "[dissatisfaction-hnn] Someone has been sitting on my favourite cushion again.",
+   "kind": "line",
+   "i": 5,
+   "seed": 614,
+   "gen_s": 0.75,
+   "dur": 3.4,
+   "rtf": 0.221,
+   "miss": 0.111,
+   "approx": false,
+   "tag": "dissatisfaction-hnn",
+   "at": "start"
+  },
+  {
+   "t0": 22.697,
+   "t1": 25.218,
+   "label": "[confirmation-en]",
+   "spk": "confirmation-en",
+   "text": "[confirmation-en] Yes, yes. I'll put the kettle on.",
+   "kind": "line",
+   "i": 6,
+   "seed": 615,
+   "gen_s": 0.6,
+   "dur": 2.52,
+   "rtf": 0.238,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "confirmation-en",
+   "at": "start"
+  },
+  {
+   "t0": 26.018,
+   "t1": 28.201,
+   "label": "[surprise-wa]",
+   "spk": "surprise-wa",
+   "text": "[surprise-wa] Look at the size of that moon!",
+   "kind": "line",
+   "i": 7,
+   "seed": 616,
+   "gen_s": 0.61,
+   "dur": 2.18,
+   "rtf": 0.28,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "surprise-wa",
+   "at": "start"
+  },
+  {
+   "t0": 29.001,
+   "t1": 31.923,
+   "label": "[laughter]",
+   "spk": "laughter",
+   "text": "And then the cat fell asleep in the fruit bowl. [laughter]",
+   "kind": "line",
+   "i": 8,
+   "seed": 617,
+   "gen_s": 0.63,
+   "dur": 2.92,
+   "rtf": 0.216,
+   "miss": 0.0,
+   "approx": false,
+   "tag": "laughter",
+   "at": "end"
+  }
+ ],
+ "events": [
+  {
+   "t": 3.34,
+   "kind": "tag",
+   "label": "laughter"
+  },
+  {
+   "t": 7.222,
+   "kind": "tag",
+   "label": "sigh"
+  },
+  {
+   "t": 11.287,
+   "kind": "tag",
+   "label": "surprise-oh"
+  },
+  {
+   "t": 14.924,
+   "kind": "tag",
+   "label": "question-ah"
+  },
+  {
+   "t": 18.496,
+   "kind": "tag",
+   "label": "dissatisfaction-hnn"
+  },
+  {
+   "t": 22.697,
+   "kind": "tag",
+   "label": "confirmation-en"
+  },
+  {
+   "t": 26.018,
+   "kind": "tag",
+   "label": "surprise-wa"
+  },
+  {
+   "t": 31.122999999999998,
+   "kind": "tag",
+   "label": "laughter"
+  }
+ ],
+ "extra": {
+  "voice": "Otto (house voice)"
+ }
+}

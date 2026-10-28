@@ -1,0 +1,56 @@
+{
+ "no": "07",
+ "slug": "07-music-room",
+ "title": "Music Room",
+ "feature": "Speed, pauses and length",
+ "public": true,
+ "what": "Timing under your control: a speed setting, pauses written into the text, slow and fast passages and gentle emphasis, and a target length the line is fitted into.",
+ "inputs": [
+  {
+   "label": "Voice",
+   "value": "Mabel, a fixed house voice"
+  },
+  {
+   "label": "Speeds",
+   "value": "0.75, 1.0, 1.25, 1.5"
+  },
+  {
+   "label": "Pauses",
+   "value": "[pause 700ms] ... [pause 1500ms]"
+  },
+  {
+   "label": "Markup",
+   "value": "[slow]…[/slow], [fast]…[/fast], [emphasis]…[/emphasis] (long-form renderer)"
+  },
+  {
+   "label": "Fit",
+   "value": "3 s asked, 3.20 s made, 5 s asked, 5.06 s made, 8 s asked, 8.12 s made"
+  }
+ ],
+ "endpoint": "POST /generate (speed, duration, [pause]); POST /audiobook for the markup lines",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"English\",\n    \"profile_id\": \"MABEL_ID\",\n    \"duration\": 5.0,\n    \"seed\": 740,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "snippet_openai": "from openai import OpenAI\nclient = OpenAI(base_url=\"http://127.0.0.1:3900/v1\", api_key=\"local\")\nclient.audio.speech.create(model=\"omnivoice\", voice=\"MABEL_ID\",\n    input=TEXT, speed=1.25).write_to_file(\"take.mp3\")",
+ "checks": [
+  "Asked vs made: 3 s asked, 3.20 s made, 5 s asked, 5.06 s made, 8 s asked, 8.12 s made"
+ ],
+ "meter": {
+  "audio_s": 46.94,
+  "gen_s": 13.72,
+  "rtf": 0.292,
+  "wall_s": 16.35,
+  "energy_wh": 0.4065,
+  "above_idle_wh": 0.231,
+  "avg_w": 89.5,
+  "peak_w": 132.2,
+  "peak_vram_mb": 7249,
+  "gpu_busy_s": 4.17,
+  "takes": 10,
+  "measured": "2026-10-28 11:15:16"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

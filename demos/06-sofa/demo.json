@@ -1,0 +1,52 @@
+{
+ "no": "06",
+ "slug": "06-sofa",
+ "title": "The Sofa",
+ "feature": "Laughs, sighs and gasps",
+ "public": true,
+ "what": "Non-speech sounds as tags in the text: [laughter], [sigh], [surprise-oh], [question-ah], [dissatisfaction-hnn] and more. The voice does them where they are written.",
+ "inputs": [
+  {
+   "label": "Voice",
+   "value": "Otto, a fixed house voice"
+  },
+  {
+   "label": "Tags",
+   "value": "[confirmation-en] [dissatisfaction-hnn] [laughter] [question-ah] [sigh] [surprise-oh] [surprise-wa]"
+  },
+  {
+   "label": "Lines",
+   "value": "[laughter] Oh, that is the funniest thing I've heard all week! / [sigh] Another rainy evening, and the biscuit tin is empty again. / [surprise-oh] Oh! You found the remote under the cushion! / [question-ah] Ah? Did you hear the stairs creak just now? / [dissatisfaction-hnn] Someone has been sitting on my favourite cushion again. / [confirmation-en] Yes, yes. I'll put the kettle on. / [surprise-wa] Look at the size of that moon! / And then the cat fell asleep in the fruit bowl. [laughter]"
+  },
+  {
+   "label": "First line",
+   "value": "the same words without a tag, to compare"
+  }
+ ],
+ "endpoint": "POST /generate (tags inside the text)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": \"[laughter] Oh, that is the funniest thing!\",\n    \"language\": \"English\",\n    \"profile_id\": \"OTTO_ID\",\n    \"seed\": 610,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "snippet_openai": "from openai import OpenAI\nclient = OpenAI(base_url=\"http://127.0.0.1:3900/v1\", api_key=\"local\")\naudio = client.audio.speech.create(model=\"omnivoice\", voice=\"OTTO_ID\",\n    input=TEXT)\naudio.write_to_file(\"take.mp3\")",
+ "checks": [
+  "Whisper heard the words around every tag"
+ ],
+ "meter": {
+  "audio_s": 25.52,
+  "gen_s": 5.58,
+  "rtf": 0.219,
+  "wall_s": 7.36,
+  "energy_wh": 0.1751,
+  "above_idle_wh": 0.0984,
+  "avg_w": 85.6,
+  "peak_w": 96.6,
+  "peak_vram_mb": 6818,
+  "gpu_busy_s": 1.55,
+  "takes": 9,
+  "measured": "2026-10-28 11:02:27"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

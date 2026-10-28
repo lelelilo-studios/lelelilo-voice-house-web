@@ -1,0 +1,55 @@
+{
+ "no": "08",
+ "slug": "08-pantry",
+ "title": "The Pantry",
+ "feature": "Pronunciation",
+ "public": true,
+ "what": "A pronunciation dictionary for names the voice can't guess: each entry respells a word, and every line read afterwards uses it. A one-off fix can also go inline, and a word can be spelled out.",
+ "inputs": [
+  {
+   "label": "Entries",
+   "value": "Quillowbrook → Kwill-oh-brook, Worcestershire → Wuss-ter-sher, Siobhan → Shiv-awn, Nguyen → Win, Lelelilo → Leh-leh-lee-loh, Ghoti → Fish"
+  },
+  {
+   "label": "Lines",
+   "value": "Siobhan drove all the way from Worcestershire to buy a jar of Quillowbrook honey. / Mister Nguyen keeps the Lelelilo biscuits behind the jar of ghoti."
+  },
+  {
+   "label": "Inline",
+   "value": "The label on the top shelf says [[Tomato|Toe-mah-toe]], and Nell refuses to argue about it."
+  },
+  {
+   "label": "Numbers",
+   "value": "On the 12th of March we baked 1,234 cookies by 3:45 pm, and sold them at $2.50 each."
+  },
+  {
+   "label": "Spelled",
+   "value": "The jar on the top shelf is labelled [spell]JAM[/spell], but it is full of buttons. (long-form renderer)"
+  }
+ ],
+ "endpoint": "POST /pronunciation, then POST /generate (pronounce on or off)",
+ "snippet": "import requests\nrequests.post(\"http://127.0.0.1:3900/pronunciation\", json={\n    \"term\": \"Quillowbrook\", \"replacement\": \"Kwill-oh-brook\",\n    \"type\": \"respelling\", \"language\": \"en\"})\nwav = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": \"A jar of Quillowbrook honey.\", \"pronounce\": \"true\"}).content",
+ "checks": [
+  "The dictionary entries were removed again after this room"
+ ],
+ "meter": {
+  "audio_s": 33.9,
+  "gen_s": 7.22,
+  "rtf": 0.213,
+  "wall_s": 9.21,
+  "energy_wh": 0.233,
+  "above_idle_wh": 0.1328,
+  "avg_w": 91.1,
+  "peak_w": 137.3,
+  "peak_vram_mb": 7291,
+  "gpu_busy_s": 1.71,
+  "takes": 7,
+  "measured": "2026-10-28 11:15:43"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

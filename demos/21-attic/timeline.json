@@ -1,0 +1,480 @@
+{
+ "v": 1,
+ "duration": 3.429,
+ "tracks": [
+  {
+   "name": "clip-0",
+   "file": "media/clip-0.mp3",
+   "duration": 3.429,
+   "env_fps": 60,
+   "env": "DxIjMjc4Ozs7ODUyKikkHBQODxdum8nn4Nbl7ObKsarL9//ixunuz5xeP1+Ir76/v6uHfoujt83f5d22fI/ExLG4ur7GyM/T0NDEvrSmhU0obYh4KhELPIy8vY5BGw4/cKazoaCflaq1xM2+v8rNzMrBs5hMLlegucHV1M3KuqyomoOgtLa1s7OxsqiAk6ylj2QdEA1ae3plbnuJkKy+u8/Ryc3KzMO5vLq1q5eEuda8eVpNVJ3R3seqrKySd3Rsjq+skG9SiY1mSDUYCwkF",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "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"
+  },
+  {
+   "name": "clip-1",
+   "file": "media/clip-1.mp3",
+   "duration": 3.429,
+   "env_fps": 60,
+   "env": "DREjMjc4PDs7ODUyKikkHBMLDRVum8jn4Nbk7ObKsarK9//hxunuz5xeP1+Ir76/v6uHfoujt83f5d22fI/ExLK4ur7GyM7T0tTFvLSmhU0obYh3KQ8IO4y8vY5BGw5AcKazoaCflKq1xMy9v8rMy8rAs5hNLlegucHU1MzKuqyomoOgtLa0s7OxsqeAk6ylj2QeDwpafHplbnuIkKy9vNDRyc3KzMO5vbu1qpeEuda8eFlNVJzU4sepq6ySd3Rsjq+skG9TiY1mSDUYCgcD",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "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"
+  },
+  {
+   "name": "clip-2",
+   "file": "media/clip-2.mp3",
+   "duration": 3.429,
+   "env_fps": 60,
+   "env": "DxMjMjc4PDs7ODUyKikkHBQODxZum8nn4dbk7ObKsqvL9v/hxunuz5xeP2CJr76/v6uIf4ukuM7f5d63fJDExLK4ur7GyM/T0dHEvrSmhU8pbYh4KhELPIy9vo9BHA8/cKe0oqCflKq2xc2/wcrMy8vBs5hML1ihucHV1M3Kuqyom4Sgtbe1s7SxsqeCk6ukjmQeEQ1afHtmbnuJka2/vM7Ryc3KzMS6vLu2q5iFu9a6fFxNVJ7S3seqq6ySd3Rsjq+skXBSiY5oSTUZCwkF",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "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"
+  },
+  {
+   "name": "clip-3",
+   "file": "media/clip-3.mp3",
+   "duration": 3.121,
+   "env_fps": 60,
+   "env": "DxIjMjc3Ozs7ODMvJyMcEw4ObpvI5+DY5erevqm46v/ixOjvxnxPYIewwMS9oIWCl7TO3N7Qqnyuxbqwtr3Hx83S0NDAr62eZXyGYB4NLn6tvqZgLRA8aZaurJyZo6q+y8G/yM3Ny7+zmkZdo7rC1NbKxbmtqJCNpbC3tLO0sa2Kk6qWZhYNDHJ/bGt5hZCauca8ycvMz8HAvraxrpeGwNSzblVbn9bewbKvn4p1bpCvrJFveo97UTshCgc=",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "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"
+  },
+  {
+   "name": "clip-4",
+   "file": "media/clip-4.mp3",
+   "duration": 3.429,
+   "env_fps": 60,
+   "env": "QkhHSU1OT09PTk1MSUlKS0hHSUlzncno4NLh6ePIsKvK9v/ixuvx0Z5lUmaLsL+/v6yKgI2kuM/g5d63gJHExLO5ur7GyNDT0dHFwLepiVlKcot8S0hIUI69vpFSSEhRdaezo6Kglqu1xc7AwcrNzMvCtJlWSl+hucHV1M3LvK2qnYagtrm3s7KwsaeClaymkWtISEdgf35sdH+Lka2/vc/Rys7LzcO5vLu2q5mIudW7e2FZXZ3R4Muur7CWe3hxkLCtkXNdjJBtV05ISUU2",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "OSYtAS45RlJRR2xpbnx+gykWPAcsTU5pZGF2foKLkJQmJzpPbF9TZ21wiHmLiIuYICZJX2FfXmFpcZV7jI6VmDspSVdbaWdqaHqbeYmHkpZDJT0sWlxwYmN5lnyHj5CWST8uO1VgYl1rb4x8iYiRlTsvLkxiWk5gb22De4CLkJUjKERFUVRXZ2N4c3p/kJKZBgRNLUxUSmNlZ3F6gI2SlmCOlsWYd0tcZ2N1fn2NkpWWzJT/yKiEY2lxgIaEi5SXoO2k/9rK6ZiOt83EjYCSlkTbyt3q2v++u+C4t49/ipApnuOL7/T/vtu3dpOGfYeNK4vptfD2zrajcGOAfoOMkkiD6az/zueitrJ9joqGlJlDhOSF8e//u8Dwwc+mi5eXP3Dck/n59ZyFttLarYWQljdu6oj//8FqbXu73dKGjptQwd/N+O+gaGlvgtXCio+YVLSArYuAcGRrcXiaiYyQlxeWvn3GvayMiZaQu5yjl6dAx97Z7d7XlW19r7uplJSfWOC1+9SmunxjcY6SkIuQllXmj+O3lZZvZG2Bmp2IkphJ6nmzrZuQbXdtdamWipCZWe/Hwtm2zYGBcrqtjIaQmEPVz7Tpz/aZjZbkoJeIkZoj0rPd1+X/noCnz6GaiJKaXtCe5dPV1IpxjoSCiYuRlnrRl+vI0PWzo8aOqpKMkZaHz4j22r/qrqzAiKiTiI+Wk81M+tuWgXOWfnqTfoiSmYvRjf/nqZOrk3lxkICFkZdvxob258TO9t+YfZ6Mh5WWcbNy2duVwf//wY+4joiUm4WPo8fOjK377+2+uouFk5Z9SbumroW27cj62IqBhI+XfTWngYyBwsGZ8cl/g4mOl1ddT19SUXRtaKuJe36IlZlAKGBVaHCcdZXjuneHlJOaMix4XWZ2mHCFxZF6gouWmi49R0ddVlhZYXR3d4eMjZlvm5e6sqbfmZK5epWNi4yZnqCs09DL/ayf2oCyqIuSmox7tLWzvcdxe6ZvkY6Ml5c1UkRVUVBfZGtzc35/ipKVa4dvramc0ZCQqIGKipGdoJOVnL7Jx/e1zrlvnqSHlJqgj6e/y+jVksN5boiZjZCYpZOmxNXop4GlcHN9iI6RmJK0jeLi7eS6w718gpuRlZx2y3jty87i+MjpyKjNjpOXQsOj4s+ux+u5ueXB14iPkhu7wb30n6zSxqTfzNKFjpQQs76s9q2r1si418C7h4+PS8m08Oi+v8i3xq6lmYOJkHa5hdrEfWxfXG9teH6CkJVZmJOwoJqibGtxi4F9iZKYU9ar7M7W4ImBi62Mh4mUm0LZb//PubtudXaJgYiJlJph0nH/v6Gbc2lyj42Ki5KYXcVr/O231Yd2bLjEsYiUl4KqfNn4os54bm6RxMGGkZiTbK+75KjRnW94lb6rjJCak4iewNKj2eyWnNvYtYWQlW+tZ8jIj7n1sbLs1ruHlI1WqDrEspOt4da94dK2gYmMcp1fvbOZte/WuN/RsYOKjoh+j6CqmcXoqbTHx6ODiY+NaotxlJfC2JCu5OyshI+SdUJ3bZCQvK55iOHdkYaTljgkV1Z1W3xkaGWalH2Fj5UcPEooTU5dWF1udX6AgpGZLk1QFmKmrYCTmJvSlqKUnltpVUBssbyXi4ifyJuamqKPtaGwuJiqvJyLvKuYiJ2bq6qc3dSlo5h9s46UhoqQlrOkpsrYmZ3g3fKjvpOJj52pmp690ZGk5v/ToburiZKVnrZt1NaYt/j/q5KetYqSlZ7DU9zcoNz64ZaClaqLkpijuY/Q5c717rGHc5eViZKasIy6s9fk67vev4G5ioeSl694wK3G4vCZvN++1KyOkZuuYcCpw+XEe3iIxc+4lpOWoo6QjKGwcVZja6CZtPi9zVk3MF9JUFlcZGu8qcP/xdctOztGVWBoX2WDo5eouqC9XImJhX51hbGwjXyJiIqRrqa+sszEkKf0/d+HrrOHkJinnqi5x46k7Pr/s8vDhYyVm2GxpLN7muDD2+Xcxn2GjYtUqKzFgrHChpjW4NWAiY6FSK7E2X57Yl5slZ2VhYqQZ1mArcqWw3prfsrKu4aTmG8vaWqjpOuddJDe3L2MkZlbPl15gJPWjHB3vrWejZGTQ05ZRl54fWBrdJCew9SirDszQlxeUFdYZnOqk8TLnqgZOTpOWlVqXGx2ln+SiZKVCzs2NzdAYGJiant+hIqQmw=="
+  },
+  {
+   "name": "clip-5",
+   "file": "media/clip-5.mp3",
+   "duration": 2.829,
+   "env_fps": 60,
+   "env": "wfb+3qZhRGOMtcXJxKiKgpCqxdTg6uO6gKDKxba7v8PM1dXY1tXW0MGtjFEpeIx0KREMPZDDwo5CHA9Bday4paWjmbC7ytfU1Nzk5ufcyaVHMl2mwMjb2dLRv7Stl4amvsvR0dHO0MCSo7yzll8cEQ1egHxncYCNmbHBydXR0NLT08O+wb+6r5yLwNzAeltPWKPa6tjJysOoh4F0lrexk3FXjZFoSDUYCwk=",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "dqTOk/DdrWRfX6mvoEU/Rj5q7o3//8NfWWi34NZLX2lPxePR/POdSDFJctrGQ1ZfSreEsI+DYTc9VGGUcF87TCSWv4HIvqmCg5GOu5meiI5Gx97b793Xl2FqrLyne3eAQeG2/NajvG9ERYaEggwTOFvnjuS4lpBWSEZnm5IxOk4163ywrZ2PT1U7UauNO0pTS/DGwtm2zX54W7upcys2VzHV0LTpzfaWjpDlmH4BGj8b07Td2Ob/nH+nz5yFETcsZdCf5dPV1YJPjW5oWyRFPXnSle3H0faznsiEpINCX0iF0Ib32r/rrqzBfqV9CS4Rk8s/+92VeFeTZlyCKQAKAIjRh//nq5KukHJaiUEAGAB3xoX36MXP9+CYb5dzHjoRbq5q2dyXwf//w4e6dylHD42Tp8rTkrD/9PPCvWo0TxeHT8KrtIi88c3+3IBJKj0fgEmrhJGExsSU9MlEIyEiH1dSUE9DP3RbRat6AAAKAAwcK1VTZm2geJLiuE5IeSBZDz1rTmdsn2yAxYY3MlcPOwcVFC0sJxABDDYRGwkSAAB6nZi5s6TglIe5WIRlQi8snaKt09DN/6qY232tmwY+JJF/tbOzv8hmZ6RVgnoAJg4zHkI2QC4qEhlCLiUnQklBa4t6raic0Y+JpWVzbXqIepaXn8HKxvi1zrhUkZgzWzOjkaa8y+nWj8NlKmqLGi8ZpJakxNbqqHmoNAAsXAUWDZSzhePj7uW7xL5ka5EsPxJ4zXrwzdDk+cfpzKfOXG44Gcqq6NewzPC/vevG215rVA3DyMT9o7TZzafn1Nllc1YPvMq1/7a14M/B4svDXWtCStG8+PLEyNK90batnCwvEHjBjeHLhmRIP1wrPwEAAABJnJSwoJqjalFngWNYV1JTTtep7s7X4Yxyg6yEajRhVjnacP/RurtpS1p6bEMAOR9f0mv/wKGZY0BUinlZACYgW8df/e241YVvarjDrCRXUXupfdr4oc95Vk6CxL4jPEmRarC75KnSm1JXj72mFjZCk4ubwtSj2++Vmt/YtEpmQXq0XtHPlsD9u7r138JlezxjtjnRv5m27ePK7t7BangxfK5kyr+jw/zjxuzeunJ0TZeLna6yotLzsr7T0KpITEuSZ5Z0lpfK35C06/KuOC9Lcy5zZ4yRvbFvheXggCEfOl42TEBbWG8oKCOOhhkAAAAMAAAAAAAAAAAQG2MNKAAAFSs8JmCmr3yRkpnTg5hkgGdlUTxpsryShn2ax4+KdIKRtqSvupqsu5d5vKqSN3dsq6ue39WopZdys4aEVwArLbChpcnZmJ/j3fOhvXwlOD+ompq90ZGn5//SnLakLkMvm7Nv09aWtvn/qoKXsCk5D57ESNvdnd374ZFoj6MlMRamt5HQ5c7377J8Q4+ACQ0LsY66ttfl7Lzfvma4cgQAB7B6wq3H5PCXvd+/1KUXJz+wZL6ow+bDbmGBxtC0gU9jpIqRiJ6wZj44OJuTr/m7zVMsCiUdNlRdWVC7qMT/xdgZJScrPklOSU53oJGluI66YoqEhHxuf7Oyimt0Z2hto6a8sc3Fk6f2/+B+rKwzMz+snrG9zI6q7/3/u9DFRz0bqGy8r7yGperM5PDnzlBGOZlQs7fRh7rMj5vh695IKU6SVbTL4YiHWT9ImKGRGgUacl2Iss2cxXNTds3NukI1VnE2dmiio+ydXYXf3bsbK1RgP2JxiJfYg1FovraXRRg4KBcwMVtld2VcSYSXw9OMoRYAKEBEODhENimgisPJhJkAABMzXSgqHREMh0p4QCMoAAAAExYAAAAAABwAAAAAAA=="
+  },
+  {
+   "name": "clip-6",
+   "file": "media/clip-6.mp3",
+   "duration": 3.429,
+   "env_fps": 60,
+   "env": "DhIjMjc4PDw8OTUzKyokHBMKCQxGYn6pyNrr9+/Ik3m57vfRos3Ys39ANlt3k5eLhHJZUFhnjrfR2c6kU3C2toF7e4CJosnT0M7BvLanhk4ocI5+KQoKNoe3toUtEQs0aKKvmImJg5Oivsm4trq5u76vj3A0KEmJnZGLi4mUnZaLgnabtLi6u7u3u7KDkqmhjGIUCQlZenhka3BrZp21scLFub26vLmqsrqzpo5viZ+QZEI2Tp/My62anJt/U0xKco+PfWJFa3FbRzcXCQYE",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "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"
+  }
+ ],
+ "words": [],
+ "segments": [
+  {
+   "t0": 0.0,
+   "t1": 3.429,
+   "label": "marked",
+   "kind": "clip",
+   "track": "clip-0",
+   "marked": true,
+   "confidence": 1.0,
+   "bits": "0100111101001101",
+   "source": "VoiceStudio"
+  },
+  {
+   "t0": 0.0,
+   "t1": 3.429,
+   "label": "unmarked",
+   "kind": "clip",
+   "track": "clip-1",
+   "marked": false,
+   "confidence": 0.0207,
+   "bits": "0110110100100100",
+   "source": "unknown"
+  },
+  {
+   "t0": 0.0,
+   "t1": 3.429,
+   "label": "64 kbps mp3",
+   "kind": "clip",
+   "track": "clip-2",
+   "marked": true,
+   "confidence": 1.0,
+   "bits": "0100111101001101",
+   "source": "VoiceStudio"
+  },
+  {
+   "t0": 0.0,
+   "t1": 3.121,
+   "label": "10% faster",
+   "kind": "clip",
+   "track": "clip-3",
+   "marked": false,
+   "confidence": 0.1139,
+   "bits": "0100111101001101",
+   "source": "VoiceStudio"
+  },
+  {
+   "t0": 0.0,
+   "t1": 3.429,
+   "label": "noise added (15 dB)",
+   "kind": "clip",
+   "track": "clip-4",
+   "marked": false,
+   "confidence": 0.3471,
+   "bits": "0100111101101101",
+   "source": "unknown"
+  },
+  {
+   "t0": 0.0,
+   "t1": 2.829,
+   "label": "cut to 3 seconds",
+   "kind": "clip",
+   "track": "clip-5",
+   "marked": true,
+   "confidence": 0.9938,
+   "bits": "0100111101001101",
+   "source": "VoiceStudio"
+  },
+  {
+   "t0": 0.0,
+   "t1": 3.429,
+   "label": "phone line",
+   "kind": "clip",
+   "track": "clip-6",
+   "marked": true,
+   "confidence": 1.0,
+   "bits": "0100111101001101",
+   "source": "VoiceStudio"
+  }
+ ],
+ "events": [],
+ "extra": {
+  "line": "Nobody can hear the mark, but the lamp in the attic can always find it.",
+  "rooms": [
+   {
+    "room": "01-portrait-staircase",
+    "file": "voices.mp3",
+    "marked": true,
+    "confidence": 0.7741,
+    "bits": "0111011101011011",
+    "source": "unknown",
+    "why": ""
+   },
+   {
+    "room": "02-sewing-room",
+    "file": "sewing.mp3",
+    "marked": false,
+    "confidence": 0.4746,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": "just under the 0.5 line: a long file of many short takes with pauses between them"
+   },
+   {
+    "room": "03-front-door",
+    "file": "door.mp3",
+    "marked": true,
+    "confidence": 0.5322,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "04-map-room",
+    "file": "map.mp3",
+    "marked": true,
+    "confidence": 0.768,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "05-postcard-wall",
+    "file": "postcards.mp3",
+    "marked": true,
+    "confidence": 0.9939,
+    "bits": "0000011101011101",
+    "source": "unknown",
+    "why": ""
+   },
+   {
+    "room": "06-sofa",
+    "file": "sofa.mp3",
+    "marked": true,
+    "confidence": 0.8562,
+    "bits": "0000011101010101",
+    "source": "unknown",
+    "why": ""
+   },
+   {
+    "room": "07-music-room",
+    "file": "music.mp3",
+    "marked": true,
+    "confidence": 0.873,
+    "bits": "0100110101001101",
+    "source": "unknown",
+    "why": ""
+   },
+   {
+    "room": "08-pantry",
+    "file": "pantry.mp3",
+    "marked": true,
+    "confidence": 0.8111,
+    "bits": "0000011001010101",
+    "source": "unknown",
+    "why": ""
+   },
+   {
+    "room": "09-paint-shop",
+    "file": "paint.mp3",
+    "marked": true,
+    "confidence": 0.5926,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "10-kitchen",
+    "file": "cakes.mp3",
+    "marked": true,
+    "confidence": 0.8452,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "10-kitchen",
+    "file": "stream.mp3",
+    "marked": true,
+    "confidence": 0.7091,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "11-garage",
+    "file": "car-cosyvoice.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "11-garage",
+    "file": "car-indextts2.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "11-garage",
+    "file": "car-kittentts.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "11-garage",
+    "file": "car-omnivoice.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "11-garage",
+    "file": "car-pockettts.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "11-garage",
+    "file": "car-supertonic3.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "12-mood-lamp",
+    "file": "moods.mp3",
+    "marked": false,
+    "confidence": 0.4671,
+    "bits": "0010111001011001",
+    "source": "unknown",
+    "why": "just under the 0.5 line: a long file of many short takes with pauses between them"
+   },
+   {
+    "room": "13-copy-room",
+    "file": "as-hoot.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "13-copy-room",
+    "file": "as-nell.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "13-copy-room",
+    "file": "as-tilly.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "13-copy-room",
+    "file": "copies.mp3",
+    "marked": true,
+    "confidence": 0.6167,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "13-copy-room",
+    "file": "performance.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "13-copy-room",
+    "file": "sample.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "15-childrens-room",
+    "file": "story.mp3",
+    "marked": true,
+    "confidence": 0.9988,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "16-study",
+    "file": "story.mp3",
+    "marked": true,
+    "confidence": 0.999,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "17-phone-nook",
+    "file": "message.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "18-dinner-table",
+    "file": "scene.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "19-laundry",
+    "file": "cleaned.mp3",
+    "marked": false,
+    "confidence": 0.04,
+    "bits": "0010111111111101",
+    "source": "unknown",
+    "why": "pulled back out of the noise by Demucs (a new recording of the voice)"
+   },
+   {
+    "room": "19-laundry",
+    "file": "mix.mp3",
+    "marked": false,
+    "confidence": 0.0881,
+    "bits": "0010000111111101",
+    "source": "unknown",
+    "why": "buried under music and a washing machine"
+   },
+   {
+    "room": "19-laundry",
+    "file": "original.mp3",
+    "marked": true,
+    "confidence": 0.9633,
+    "bits": "1011111101011101",
+    "source": "unknown",
+    "why": ""
+   },
+   {
+    "room": "20-tv-room",
+    "file": "dub-en.mp3",
+    "marked": true,
+    "confidence": 1.0,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": ""
+   },
+   {
+    "room": "20-tv-room",
+    "file": "dub-es.mp3",
+    "marked": false,
+    "confidence": 0.2263,
+    "bits": "0100101101101101",
+    "source": "unknown",
+    "why": "VoiceStudio's finished dub track"
+   },
+   {
+    "room": "20-tv-room",
+    "file": "dub-fr.mp3",
+    "marked": false,
+    "confidence": 0.2684,
+    "bits": "0100111101001101",
+    "source": "VoiceStudio",
+    "why": "VoiceStudio's finished dub track"
+   },
+   {
+    "room": "20-tv-room",
+    "file": "dub-ja.mp3",
+    "marked": false,
+    "confidence": 0.2425,
+    "bits": "0100100101101101",
+    "source": "unknown",
+    "why": "VoiceStudio's finished dub track"
+   }
+  ],
+  "found": 28,
+  "checked": 35,
+  "method": "AudioSeal, 16-bit message"
+ }
+}

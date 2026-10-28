@@ -1,0 +1,52 @@
+{
+ "no": "05",
+ "slug": "05-postcard-wall",
+ "title": "Postcard Wall",
+ "feature": "One voice, twenty-two languages",
+ "public": true,
+ "what": "One cloned voice speaking twenty-two languages, from Spanish and Japanese to Quechua, Guaraní and Nahuatl: the same timbre, each language's own words. VoiceStudio knows over 600 languages.",
+ "inputs": [
+  {
+   "label": "Voice",
+   "value": "Nell, a fixed house voice (British English reference)"
+  },
+  {
+   "label": "Text",
+   "value": "Article 1 of the Universal Declaration of Human Rights"
+  },
+  {
+   "label": "Languages",
+   "value": "English, Spanish, French, German, Italian, Portuguese, Russian, Icelandic, Welsh, Basque, Arabic, Hindi, Chinese (Mandarin), Japanese, Korean, Swahili, Yoruba, Māori, Hawaiian, Quechua (Ayacucho), Guaraní (Paraguay), Nahuatl (Central)"
+  },
+  {
+   "label": "Source",
+   "value": "Universal Declaration of Human Rights, Article 1. Translations via the UDHR in Unicode project (github.com/eric-muller/udhr), from the Office of the UN High Commissioner for Human Rights."
+  }
+ ],
+ "endpoint": "POST /generate (language = the language's name)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"ayacucho quechua\",\n    \"profile_id\": \"NELL_ID\",\n    \"seed\": 519,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "checks": [
+  "Whisper checked every language it knows",
+  "Word timings estimated (Whisper doesn't know them): Yoruba, Hawaiian, Quechua (Ayacucho), Guaraní (Paraguay), Nahuatl (Central)"
+ ],
+ "meter": {
+  "audio_s": 226.82,
+  "gen_s": 25.74,
+  "rtf": 0.113,
+  "wall_s": 33.32,
+  "energy_wh": 0.9063,
+  "above_idle_wh": 0.545,
+  "avg_w": 97.9,
+  "peak_w": 154.4,
+  "peak_vram_mb": 7334,
+  "gpu_busy_s": 10.44,
+  "takes": 22,
+  "measured": "2026-10-28 11:02:01"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

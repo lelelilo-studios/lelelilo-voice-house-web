@@ -1,0 +1,48 @@
+{
+ "no": "17",
+ "slug": "17-phone-nook",
+ "title": "Phone Nook",
+ "feature": "Live dictation",
+ "public": true,
+ "what": "Dictation as you speak: the audio streams in 100 ms pieces and the words appear while it plays, first as guesses, then settled. Two small dictation models, side by side.",
+ "inputs": [
+  {
+   "label": "Caller",
+   "value": "Otto, a house voice, played in at real speed"
+  },
+  {
+   "label": "Models",
+   "value": "Whisper tiny and Parakeet TDT v3 (sherpa-onnx, on this PC)"
+  },
+  {
+   "label": "Results",
+   "value": "Whisper tiny: 0% word errors · Parakeet TDT v3: 0% word errors"
+  }
+ ],
+ "endpoint": "WebSocket /ws/transcribe?pcm=1&sr=16000&model=…",
+ "snippet": "import json, websockets.sync.client as wsc\nurl = \"ws://127.0.0.1:3900/ws/transcribe?pcm=1&sr=16000&model=sherpa-parakeet-tdt-v3\"\nwith wsc.connect(url) as ws:\n    for chunk in microphone():  # 16-bit PCM, 16 kHz\n        ws.send(chunk)\n    ws.send(\"EOF\")\n    print(json.loads(ws.recv()))  # {\"type\": \"partial\" | \"final\", \"text\": ...}",
+ "checks": [
+  "Both sessions ran at real time on this PC"
+ ],
+ "work": "dictated",
+ "meter": {
+  "audio_s": 30.39,
+  "gen_s": 1.07,
+  "rtf": 0.035,
+  "wall_s": 23.07,
+  "energy_wh": 0.1783,
+  "above_idle_wh": 0.0,
+  "avg_w": 27.8,
+  "peak_w": 95.1,
+  "peak_vram_mb": 7189,
+  "gpu_busy_s": 4.35,
+  "takes": 3,
+  "measured": "2026-10-28 11:10:29"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

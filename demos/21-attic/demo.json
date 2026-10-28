@@ -1,0 +1,61 @@
+{
+ "no": "21",
+ "slug": "21-attic",
+ "title": "The Attic",
+ "feature": "Invisible watermark",
+ "public": true,
+ "what": "An inaudible mark that says \"made by AI\": VoiceStudio adds it to every take it speaks, and its detector can find it again. It survived 64 kbps mp3, cut to 3 seconds, phone line; it was lost after 10% faster and noise added (15 dB). The same line made with the mark switched off stays dark.",
+ "inputs": [
+  {
+   "label": "Mark",
+   "value": "AudioSeal, a 16-bit message hidden in the sound"
+  },
+  {
+   "label": "Line",
+   "value": "Nobody can hear the mark, but the lamp in the attic can always find it."
+  },
+  {
+   "label": "Survived",
+   "value": "64 kbps mp3, cut to 3 seconds, phone line"
+  },
+  {
+   "label": "Lost",
+   "value": "10% faster, noise added (15 dB)"
+  },
+  {
+   "label": "The house",
+   "value": "found in 28 of 35 published files"
+  },
+  {
+   "label": "Not found in",
+   "value": "sewing room (sewing.mp3): just under the 0.5 line: a long file of many short takes with pauses between them; mood lamp (moods.mp3): just under the 0.5 line: a long file of many short takes with pauses between them; laundry (cleaned.mp3): pulled back out of the noise by Demucs (a new recording of the voice); laundry (mix.mp3): buried under music and a washing machine; tv room (dub-es.mp3): VoiceStudio's finished dub track; tv room (dub-fr.mp3): VoiceStudio's finished dub track; tv room (dub-ja.mp3): VoiceStudio's finished dub track"
+  }
+ ],
+ "endpoint": "POST /watermark/detect",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/watermark/detect\",\n    files={\"file\": open(\"clip.mp3\", \"rb\")}).json()\nprint(r[\"is_watermarked\"], r[\"confidence\"])",
+ "checks": [
+  "Found in 28 of 35 published files of the other rooms",
+  "The same line made without the mark: no mark found"
+ ],
+ "work": "checked",
+ "meter": {
+  "audio_s": 6.86,
+  "gen_s": 5.98,
+  "rtf": 0.872,
+  "wall_s": 106.22,
+  "energy_wh": 1.1028,
+  "above_idle_wh": 0.0209,
+  "avg_w": 37.4,
+  "peak_w": 88.6,
+  "peak_vram_mb": 6177,
+  "gpu_busy_s": 27.9,
+  "takes": 2,
+  "measured": "2026-10-28 11:25:10"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

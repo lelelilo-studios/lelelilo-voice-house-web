@@ -1,0 +1,51 @@
+{
+ "no": "09",
+ "slug": "09-paint-shop",
+ "title": "Paint Shop",
+ "feature": "Six finishes",
+ "public": true,
+ "what": "The same voice, words and seed through six finishing presets: VoiceStudio's built-in effects chain, from untouched to broadcast-ready.",
+ "inputs": [
+  {
+   "label": "Voice",
+   "value": "Otto, a fixed house voice, seed 909"
+  },
+  {
+   "label": "Line",
+   "value": "Paint the hallway any colour you like, as long as it feels warm when you come home."
+  },
+  {
+   "label": "Presets",
+   "value": "raw, broadcast, cinematic, podcast, warm, bright (broadcast is VoiceStudio's default)"
+  },
+  {
+   "label": "Loudness",
+   "value": "left as each preset makes it"
+  }
+ ],
+ "endpoint": "POST /generate (effect_preset)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"English\",\n    \"profile_id\": \"OTTO_ID\",\n    \"effect_preset\": \"cinematic\",\n    \"seed\": 909,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "checks": [
+  "The words are the same in all six (Whisper)"
+ ],
+ "meter": {
+  "audio_s": 25.12,
+  "gen_s": 1.98,
+  "rtf": 0.079,
+  "wall_s": 2.74,
+  "energy_wh": 0.0974,
+  "above_idle_wh": 0.0689,
+  "avg_w": 127.8,
+  "peak_w": 100.5,
+  "peak_vram_mb": 7048,
+  "gpu_busy_s": 1.05,
+  "takes": 6,
+  "measured": "2026-10-28 11:03:38"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

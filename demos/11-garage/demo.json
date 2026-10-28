@@ -1,0 +1,52 @@
+{
+ "no": "11",
+ "slug": "11-garage",
+ "title": "The Garage",
+ "feature": "Six speech engines",
+ "public": true,
+ "what": "Six speech engines that VoiceStudio can install and run on the same PC, all saying the same sentence. The race is the time each took to make it (after loading).",
+ "inputs": [
+  {
+   "label": "Line",
+   "value": "Six engines, one sentence, and a race to the far end of the garage. Ready, steady, go!"
+  },
+  {
+   "label": "Engines",
+   "value": "VoiceStudio (OmniVoice) (CC BY-NC 4.0), IndexTTS 2.5 (IndexTTS licence), CosyVoice 3 (Apache 2.0), PocketTTS (CC BY 4.0), Supertonic 3 (OpenRAIL-M), KittenTTS (Apache 2.0)"
+  },
+  {
+   "label": "Voices",
+   "value": "Otto cloned by three engines; PocketTTS voice alba; Supertonic 3 voice M1; KittenTTS voice expr-voice-2-m"
+  },
+  {
+   "label": "Finish order",
+   "value": "VoiceStudio (OmniVoice) 0.36 s · PocketTTS 1.76 s · Supertonic 3 1.81 s · IndexTTS 2.5 2.94 s · CosyVoice 3 3.43 s · KittenTTS 4.12 s"
+  }
+ ],
+ "endpoint": "POST /generate (engine, profile_id or preset_voice)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"English\",\n    \"engine\": \"cosyvoice\",\n    \"profile_id\": \"OTTO_ID\",\n    \"seed\": 1111,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "checks": [
+  "Every engine timed 3 times after loading; the median is shown",
+  "Whisper understood every car"
+ ],
+ "meter": {
+  "audio_s": 129.33,
+  "gen_s": 58.44,
+  "rtf": 0.452,
+  "wall_s": 60.69,
+  "energy_wh": 1.2168,
+  "above_idle_wh": 0.5823,
+  "avg_w": 72.2,
+  "peak_w": 214.3,
+  "peak_vram_mb": 12123,
+  "gpu_busy_s": 13.1,
+  "takes": 24,
+  "measured": "2026-10-28 11:06:59"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

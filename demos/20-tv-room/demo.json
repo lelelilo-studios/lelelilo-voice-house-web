@@ -1,0 +1,73 @@
+{
+ "no": "20",
+ "slug": "20-tv-room",
+ "title": "TV Room",
+ "feature": "Dubbing",
+ "public": true,
+ "what": "A scene dubbed into three languages on one PC: voices separated from the background, lines translated, and each line spoken again by a copy of its own speaker's voice, fitted to its slot.",
+ "inputs": [
+  {
+   "label": "Scene",
+   "value": "chapter one of the bedtime story, 36 s, four voices"
+  },
+  {
+   "label": "Languages",
+   "value": "English → Spanish, French, Japanese"
+  },
+  {
+   "label": "Translation",
+   "value": "NLLB-200 (600M), sentence by sentence, on this PC"
+  },
+  {
+   "label": "Voices",
+   "value": "each line cloned from its own speaker in the original (per line)"
+  },
+  {
+   "label": "Timing",
+   "value": "every line fitted to its original slot (strict slot)"
+  }
+ ],
+ "endpoint": "POST /dub/upload → /dub/translate → /dub/generate/{job_id}",
+ "snippet": "import requests\nAPI = \"http://127.0.0.1:3900\"\njob = requests.post(f\"{API}/dub/upload\", data={\"source_lang\": \"en\"},\n    files={\"video\": open(\"scene.mp4\", \"rb\")}).json()[\"job_id\"]\nsegs = requests.post(f\"{API}/dub/transcribe/{job}\").json()[\"segments\"]\nes = requests.post(f\"{API}/dub/translate\", json={\"segments\": segs,\n    \"target_lang\": \"es\", \"provider\": \"nllb\"}).json()[\"translated\"]\nrequests.post(f\"{API}/dub/generate/{job}\", json={\"segments\": es,\n    \"language\": \"Spanish\", \"voice_match\": \"per_line\"})",
+ "checks": [
+  "Every line fits its original slot",
+  "Spanish: the dub says the translated lines (98% alike, by Whisper)",
+  "French: the dub says the translated lines (98% alike, by Whisper)",
+  "Japanese: the dub says the translated lines (87% alike, by Whisper)"
+ ],
+ "work": "dubbed",
+ "downloads": [
+  {
+   "label": "Subtitles (Spanish)",
+   "file": "media/dub-es.srt"
+  },
+  {
+   "label": "Subtitles (French)",
+   "file": "media/dub-fr.srt"
+  },
+  {
+   "label": "Subtitles (Japanese)",
+   "file": "media/dub-ja.srt"
+  }
+ ],
+ "meter": {
+  "audio_s": 107.49,
+  "gen_s": 23.57,
+  "rtf": 0.219,
+  "wall_s": 31.81,
+  "energy_wh": 0.5994,
+  "above_idle_wh": 0.2711,
+  "avg_w": 67.8,
+  "peak_w": 134.5,
+  "peak_vram_mb": 7181,
+  "gpu_busy_s": 5.09,
+  "takes": 3,
+  "measured": "2026-10-28 11:11:53"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

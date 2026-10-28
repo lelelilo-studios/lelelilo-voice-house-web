@@ -1,0 +1,51 @@
+{
+ "no": "13",
+ "slug": "13-copy-room",
+ "title": "Copy Room",
+ "feature": "Voice cloning",
+ "public": true,
+ "what": "Cloning from a few seconds of speech: the copy keeps the voice and reads anything, in other languages too. Re-voicing takes a recorded line and says the same words in another voice, at the same length.",
+ "inputs": [
+  {
+   "label": "Sample",
+   "value": "Mabel, 7.7 s (a made-up house voice: no real person was cloned)"
+  },
+  {
+   "label": "New lines",
+   "value": "I have never said these words before, and yet here they are, in my voice. / Nunca he dicho estas palabras, y sin embargo aquí están, con mi voz. / Je n'ai jamais dit ces mots, et pourtant les voici, avec ma voix. / この言葉を言ったことは一度もないのに、ちゃんと私の声で聞こえます。"
+  },
+  {
+   "label": "Performance",
+   "value": "Otto: Well, I never! Somebody has tidied the whole attic, and they even dusted the owl."
+  },
+  {
+   "label": "Re-voiced as",
+   "value": "Nell, Hoot, Tilly (same words, same length)"
+  }
+ ],
+ "endpoint": "POST /profiles (kind=clone), POST /generate; POST /convert",
+ "snippet": "import requests\np = requests.post(\"http://127.0.0.1:3900/profiles\", data={\n    \"name\": \"Mabel\", \"kind\": \"clone\", \"ref_text\": SAMPLE_TEXT},\n    files={\"ref_audio\": open(\"sample.wav\", \"rb\")}).json()\nwav = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": \"Nunca he dicho estas palabras.\", \"language\": \"Spanish\",\n    \"profile_id\": p[\"id\"]}).content",
+ "checks": [
+  "Only made-up house voices are cloned in the public rooms"
+ ],
+ "meter": {
+  "audio_s": 32.97,
+  "gen_s": 5.97,
+  "rtf": 0.181,
+  "wall_s": 10.91,
+  "energy_wh": 0.2634,
+  "above_idle_wh": 0.1517,
+  "avg_w": 86.9,
+  "peak_w": 115.3,
+  "peak_vram_mb": 7034,
+  "gpu_busy_s": 3.4,
+  "takes": 8,
+  "measured": "2026-10-28 11:08:53"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

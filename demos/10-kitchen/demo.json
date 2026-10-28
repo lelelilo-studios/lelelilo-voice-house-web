@@ -1,0 +1,52 @@
+{
+ "no": "10",
+ "slug": "10-kitchen",
+ "title": "The Kitchen",
+ "feature": "Quality steps and streaming",
+ "public": true,
+ "what": "Speed against polish: fewer steps make a take faster, more steps make it finer. Streaming sends the first sentence while the rest is still being made, so you hear it almost at once.",
+ "inputs": [
+  {
+   "label": "Voice",
+   "value": "Nell, a fixed house voice"
+  },
+  {
+   "label": "Levels",
+   "value": "8 (fast), 16 (balanced), 32 (quality), 64 (max) steps"
+  },
+  {
+   "label": "Times",
+   "value": "8 steps 0.32 s, 16 steps 0.44 s, 32 steps 0.68 s, 64 steps 1.16 s (median of 3 runs)"
+  },
+  {
+   "label": "Streaming",
+   "value": "first sound after 0.43 s; the whole file takes 1.02 s"
+  }
+ ],
+ "endpoint": "POST /generate (num_step); WebSocket /ws/tts",
+ "snippet": "import json, websockets.sync.client as wsc\nwith wsc.connect(\"ws://127.0.0.1:3900/ws/tts\") as ws:\n    ws.send(json.dumps({\"text\": TEXT, \"voice\": NELL_ID}))\n    while isinstance(chunk := ws.recv(), bytes):\n        play(chunk)  # 16-bit PCM, 24 kHz, as it is made",
+ "snippet_openai": "from openai import OpenAI\nclient = OpenAI(base_url=\"http://127.0.0.1:3900/v1\", api_key=\"local\")\nwith client.audio.speech.with_streaming_response.create(\n        model=\"omnivoice\", voice=\"NELL_ID\", input=TEXT) as r:\n    r.stream_to_file(\"take.mp3\")",
+ "checks": [
+  "Each level timed 3 times on this PC; the median is shown"
+ ],
+ "meter": {
+  "audio_s": 106.04,
+  "gen_s": 13.43,
+  "rtf": 0.127,
+  "wall_s": 15.17,
+  "energy_wh": 0.6665,
+  "above_idle_wh": 0.5049,
+  "avg_w": 158.2,
+  "peak_w": 229.2,
+  "peak_vram_mb": 6980,
+  "gpu_busy_s": 9.76,
+  "takes": 18,
+  "measured": "2026-10-28 11:04:07"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

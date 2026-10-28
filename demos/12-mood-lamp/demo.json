@@ -1,0 +1,51 @@
+{
+ "no": "12",
+ "slug": "12-mood-lamp",
+ "title": "Mood Lamp",
+ "feature": "Emotion control",
+ "public": true,
+ "what": "Emotion as a dial: IndexTTS 2.5 takes eight numbers, one per emotion, and acts the same line happy, angry, sad, afraid, disgusted, melancholic, surprised or calm.",
+ "inputs": [
+  {
+   "label": "Engine",
+   "value": "IndexTTS 2.5 (installed from VoiceStudio's engine catalogue)"
+  },
+  {
+   "label": "Voice",
+   "value": "Mabel, cloned from her reference"
+  },
+  {
+   "label": "Line",
+   "value": "I found the old photo album in the attic, and I could not put it down."
+  },
+  {
+   "label": "Vector",
+   "value": "[happy, angry, sad, afraid, disgusted, melancholic, surprised, calm], one emotion at 0.8 at a time"
+  }
+ ],
+ "endpoint": "POST /generate (engine=indextts2, emo_vector)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"English\",\n    \"engine\": \"indextts2\",\n    \"profile_id\": \"MABEL_ID\",\n    \"emo_vector\": \"[0, 0, 0.8, 0, 0, 0, 0, 0]\",\n    \"seed\": 1212,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "checks": [
+  "Whisper understood every mood"
+ ],
+ "meter": {
+  "audio_s": 39.81,
+  "gen_s": 22.74,
+  "rtf": 0.571,
+  "wall_s": 24.79,
+  "energy_wh": 0.8951,
+  "above_idle_wh": 0.624,
+  "avg_w": 130.0,
+  "peak_w": 212.7,
+  "peak_vram_mb": 12278,
+  "gpu_busy_s": 11.63,
+  "takes": 9,
+  "measured": "2026-10-28 11:08:16"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

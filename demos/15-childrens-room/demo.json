@@ -1,0 +1,56 @@
+{
+ "no": "15",
+ "slug": "15-childrens-room",
+ "title": "Children's Room",
+ "feature": "Audiobooks",
+ "public": true,
+ "what": "A whole story in one request: VoiceStudio splits it into chapters, gives every line its character's voice, masters the loudness for audiobooks (ACX) and returns a chaptered m4b file.",
+ "inputs": [
+  {
+   "label": "Story",
+   "value": "The Lamp Who Couldn't Sleep (two chapters, 17 lines)"
+  },
+  {
+   "label": "Voices",
+   "value": "Nell (narrator), Pip, Professor Hoot, Tilly: four fixed house voices"
+  },
+  {
+   "label": "Markup",
+   "value": "# Chapter headings, and [voice:NAME] before each line"
+  },
+  {
+   "label": "Output",
+   "value": "m4b with chapters, ACX loudness, 350 ms between lines"
+  },
+  {
+   "label": "Engine",
+   "value": "VoiceStudio (OmniVoice)"
+  }
+ ],
+ "endpoint": "POST /audiobook",
+ "snippet": "import requests, json\nbook = \"\"\"# Chapter One: The Humming Lamp\n[voice:Nell] In the Voice House, everyone was asleep...\n[voice:Pip] Nell? Nell, are you awake?\"\"\"\nr = requests.post(\"http://127.0.0.1:3900/audiobook\", json={\n    \"text\": book, \"voice_map\": {\"Nell\": NELL_ID, \"Pip\": PIP_ID},\n    \"format\": \"m4b\", \"loudness\": \"acx\"}, stream=True)\nfor line in r.iter_lines():  # progress events, then \"done\"\n    print(line)",
+ "checks": [
+  "Whisper heard 98% of the story's words",
+  "2 chapters in the file"
+ ],
+ "meter": {
+  "audio_s": 79.6,
+  "gen_s": 17.58,
+  "rtf": 0.221,
+  "wall_s": 18.88,
+  "energy_wh": 0.4487,
+  "above_idle_wh": 0.2569,
+  "avg_w": 85.6,
+  "peak_w": 157.0,
+  "peak_vram_mb": 7399,
+  "gpu_busy_s": 4.31,
+  "takes": 1,
+  "measured": "2026-10-28 11:14:36"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

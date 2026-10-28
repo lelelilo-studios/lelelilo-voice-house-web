@@ -1,0 +1,16 @@
+{
+  "name": "Mood Lamp · Voice House",
+  "short_name": "Mood Lamp",
+  "description": "One line read in nine moods: the lamp glows each emotion, Mabel acts it, eight dials set it.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#2a1d18",
+  "theme_color": "#2a1d18",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

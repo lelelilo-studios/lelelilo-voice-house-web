@@ -1,0 +1,16 @@
+{
+  "name": "The Garage · Voice House",
+  "short_name": "The Garage",
+  "description": "Six speech engines race to make the same sentence, timed on this PC; then hear each one.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#1d3236",
+  "theme_color": "#1d3236",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

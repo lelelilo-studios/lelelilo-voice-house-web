@@ -1,0 +1,15 @@
+Meta Llama 3 is licensed under the Meta Llama 3 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.
+Boson Higgs Audio 2 is licensed under the Boson Community License, Copyright © Boson AI USA, Inc. All Rights Reserved.
+
+Built with Higgs Materials licensed from Boson AI USA, Inc., Copyright Boson AI USA, Inc., All Rights Reserved and
+Meta Llama 3 licensed under the Meta Llama 3 Community License, Copyright Meta Platforms, Inc., All Rights Reserved.
+(The speech in this site was made with OmniVoice, whose audio tokenizer is Boson AI's Higgs Audio 2.)
+Licences: licenses/higgs-audio-2.txt, and the Meta Llama 3 Community License at https://llama.meta.com/llama3/license/
+
+IndexTTS 2.5 (bilibili Model Use License, licenses/indextts-bilibili.txt): Any modifications made to the original
+model in this Derivative Work are not endorsed, warranted, or guaranteed by the original right-holder of the original
+model, and the original right-holder disclaims all liability related to this Derivative Work.
+
+OmniVoice (k2-fsa) model weights: CC BY-NC 4.0, https://creativecommons.org/licenses/by-nc/4.0/
+NLLB-200 (Meta): CC BY-NC 4.0. Parakeet TDT 0.6B v3 (NVIDIA) and PocketTTS (Kyutai): CC BY 4.0.
+Supertonic 3 (Supertone): OpenRAIL-M, https://huggingface.co/Supertone/supertonic-3

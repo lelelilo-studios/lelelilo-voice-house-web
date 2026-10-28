@@ -1,0 +1,52 @@
+{
+ "no": "18",
+ "slug": "18-dinner-table",
+ "title": "Dinner Table",
+ "feature": "Who spoke when",
+ "public": true,
+ "what": "Who spoke when: VoiceStudio splits a recording into speakers (pyannote), so each line can be given to the right person: for transcripts, subtitles and dubbing with the right voices.",
+ "inputs": [
+  {
+   "label": "Scene",
+   "value": "chapter one of the bedtime story, 36 s, four voices"
+  },
+  {
+   "label": "Engine",
+   "value": "pyannote 3.1 (speaker diarization), through VoiceStudio's transcription"
+  },
+  {
+   "label": "Found",
+   "value": "4 speakers; the right speaker for 68% of the speech"
+  },
+  {
+   "label": "Without it",
+   "value": "VoiceStudio's fallback put everyone in one speaker (35% right, the narrator's share)"
+  }
+ ],
+ "endpoint": "POST /dub/upload → POST /dub/transcribe/{job_id} (segments with speaker_id)",
+ "snippet": "import requests\nAPI = \"http://127.0.0.1:3900\"\njob = requests.post(f\"{API}/dub/upload\", data={\"source_lang\": \"en\"},\n    files={\"video\": open(\"scene.mp4\", \"rb\")}).json()[\"job_id\"]\nfor s in requests.post(f\"{API}/dub/transcribe/{job}\").json()[\"segments\"]:\n    print(s[\"start\"], s[\"speaker_id\"], s[\"text\"])",
+ "checks": [
+  "Scored against the real turns: 68% of the speech time to the right speaker"
+ ],
+ "work": "transcribed",
+ "meter": {
+  "audio_s": 35.82,
+  "gen_s": 3.71,
+  "rtf": 0.104,
+  "wall_s": 5.31,
+  "energy_wh": 0.0949,
+  "above_idle_wh": 0.0413,
+  "avg_w": 64.3,
+  "peak_w": 102.2,
+  "peak_vram_mb": 7280,
+  "gpu_busy_s": 1.12,
+  "takes": 1,
+  "measured": "2026-10-28 11:10:45"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

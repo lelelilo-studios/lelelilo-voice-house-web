@@ -1,0 +1,16 @@
+{
+  "name": "TV Room · Voice House",
+  "short_name": "TV Room",
+  "description": "The bedtime story on TV in four languages: flip the channel and the scene carries on.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#231c1a",
+  "theme_color": "#231c1a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+ "v": 1,
+ "duration": 10.129,
+ "tracks": [
+  {
+   "name": "message",
+   "file": "media/message.mp3",
+   "duration": 10.129,
+   "env_fps": 60,
+   "env": "DQ0VHSMjIiMjIBwZFRANGSU8bKvR3ubev6Camo2GhYeLflYlSpisjl1jZ5e4ztzi496+wt3b4OLmzYBOTVRbW1ii1djGz9XNwqvEz6Z3XElWkrHAxLOUbYutrZaNmKSwq52LirLLyrqkgVMfDQoQEQ4KCgoMM1FSOB9YbIGw0dzTtMTh4+Hc0cKyq6SxztfV1tbRzM/QzsK1v8W/tp1yWJGjk4uHe3iQrb+/uL7GxryukGKRr7mwmJPC2cy6q6GZiKvHxsvOwrOLQBgxOUpkgYJ7jY6Fj5WOiYB1e5SlqbKxusjDz9/b1dLNxsbEv7WytLO0srGlrq+lsa+iqaelmXeHlJGBVSk2YqK5wK6Eqbqvo53K16hra3CKpri7tsbSyMLBvcC8qpZ2WUtCNRYbISMgGRUQDAsMI1+OoYlAN118nb28mW4lEE6OnpGnz+bm4+Tp7+3n4uHj4+De3Ni8j4F3stK9iICrv6qlr7u+tq2lrKCBUzYpHBwPDClOkrvBwcK5wcnCuaN2V0ElZrfU0bd8l8PRxZo6EVp7kIxsRCUQOpW/0NXPwbW1rYlKIg4KCwsKCgoKCgkMFDxTa4mYvdbo8fb73ptMHXWmqoNPUlNNUFRibn+qvK+JaHFolc/lzZyVvc+uUFtjdXBOJiJ2rc3QxrB9QRoMDhMYGRocHRoXFRMRDw4NDAoKCQkJCiuLk3Zqcb3k7+7u6+Hi6enr6eLTtpVwbMTdybuvp59/XUEjD0tYZ4aTjJSfm5qoq6GNaFhvn727uLiXUxsODhA9fpqkoJJ4Y6jEuKaXf2Y+EggH",
+   "bands_fps": 30,
+   "bands_n": 16,
+   "bands": "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"
+  }
+ ],
+ "words": [
+  {
+   "w": "Hi,",
+   "t0": 0.0,
+   "t1": 0.4,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "it's",
+   "t0": 0.58,
+   "t1": 0.72,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "Otto",
+   "t0": 0.72,
+   "t1": 0.92,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "from",
+   "t0": 0.92,
+   "t1": 1.18,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "the",
+   "t0": 1.18,
+   "t1": 1.28,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "Voice",
+   "t0": 1.28,
+   "t1": 1.48,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "House.",
+   "t0": 1.48,
+   "t1": 1.68,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "The",
+   "t0": 1.88,
+   "t1": 2.02,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "kettle's",
+   "t0": 2.02,
+   "t1": 2.36,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "on,",
+   "t0": 2.36,
+   "t1": 2.56,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "the",
+   "t0": 2.66,
+   "t1": 2.72,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "lamps",
+   "t0": 2.72,
+   "t1": 3.0,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "are",
+   "t0": 3.0,
+   "t1": 3.14,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "lit,",
+   "t0": 3.14,
+   "t1": 3.34,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "and",
+   "t0": 3.46,
+   "t1": 3.52,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "the",
+   "t0": 3.52,
+   "t1": 3.62,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "owl",
+   "t0": 3.62,
+   "t1": 3.88,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "in",
+   "t0": 3.88,
+   "t1": 4.02,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "the",
+   "t0": 4.02,
+   "t1": 4.12,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "attic",
+   "t0": 4.12,
+   "t1": 4.34,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "says",
+   "t0": 4.34,
+   "t1": 4.6,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "hello.",
+   "t0": 4.6,
+   "t1": 4.86,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "If",
+   "t0": 5.08,
+   "t1": 5.32,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "you're",
+   "t0": 5.32,
+   "t1": 5.44,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "coming",
+   "t0": 5.44,
+   "t1": 5.68,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "over",
+   "t0": 5.68,
+   "t1": 5.9,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "tonight,",
+   "t0": 5.9,
+   "t1": 6.14,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "bring",
+   "t0": 6.28,
+   "t1": 6.48,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "biscuits.",
+   "t0": 6.48,
+   "t1": 6.96,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "Lots",
+   "t0": 7.26,
+   "t1": 7.64,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "of",
+   "t0": 7.64,
+   "t1": 7.8,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "biscuits.",
+   "t0": 7.8,
+   "t1": 8.14,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "Call",
+   "t0": 8.58,
+   "t1": 8.94,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "me",
+   "t0": 8.94,
+   "t1": 9.08,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "back",
+   "t0": 9.08,
+   "t1": 9.3,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "when",
+   "t0": 9.3,
+   "t1": 9.48,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "you",
+   "t0": 9.48,
+   "t1": 9.58,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "get",
+   "t0": 9.58,
+   "t1": 9.76,
+   "track": "",
+   "spk": null
+  },
+  {
+   "w": "this.",
+   "t0": 9.76,
+   "t1": 10.0,
+   "track": "",
+   "spk": null
+  }
+ ],
+ "segments": [],
+ "events": [
+  {
+   "t": 0.861,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi.",
+   "final_kind": null
+  },
+  {
+   "t": 0.911,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's A",
+   "final_kind": null
+  },
+  {
+   "t": 1.786,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Otto from the Voice House.",
+   "final_kind": null
+  },
+  {
+   "t": 1.865,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House.",
+   "final_kind": null
+  },
+  {
+   "t": 2.719,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on",
+   "final_kind": null
+  },
+  {
+   "t": 2.872,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on.",
+   "final_kind": null
+  },
+  {
+   "t": 3.754,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Auto from the Voice House.",
+   "final_kind": null
+  },
+  {
+   "t": 3.949,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit and the...",
+   "final_kind": null
+  },
+  {
+   "t": 4.77,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says.",
+   "final_kind": null
+  },
+  {
+   "t": 5.098,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit and the owl and the attic says hello.",
+   "final_kind": null
+  },
+  {
+   "t": 5.935,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Auto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says hello.",
+   "final_kind": null
+  },
+  {
+   "t": 6.316,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit and the owl in the attic says hello. If you're coming over...",
+   "final_kind": null
+  },
+  {
+   "t": 7.041,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says hello. If you're coming over tonight, bring biscuit.",
+   "final_kind": null
+  },
+  {
+   "t": 7.66,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says, \"Hello, if you're coming over to Night, bring biscuits.\"",
+   "final_kind": null
+  },
+  {
+   "t": 8.341,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says hello. If you're coming over tonight, bring biscuits. Lots of voice",
+   "final_kind": null
+  },
+  {
+   "t": 9.034,
+   "kind": "partial",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says, \"Hello, if you're coming over tonight, bring biscuits, lots of biscuits.\"",
+   "final_kind": null
+  },
+  {
+   "t": 9.537,
+   "kind": "partial",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says hello. If you're coming over tonight, bring biscuits. Lots of biscuits. Call me back.",
+   "final_kind": null
+  },
+  {
+   "t": 10.695,
+   "kind": "final",
+   "label": "sherpa-parakeet-tdt-v3",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says hello. If you're coming over tonight, bring biscuits. Lots of biscuits. Call me back when you get this.",
+   "final_kind": "summary"
+  },
+  {
+   "t": 10.973,
+   "kind": "final",
+   "label": "sherpa-whisper-tiny",
+   "text": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says, \"Hello, if you're coming over tonight, bring biscuits. Lots of biscuits. Call me back when you get this.\"",
+   "final_kind": "summary"
+  }
+ ],
+ "extra": {
+  "message": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says hello. If you're coming over tonight, bring biscuits. Lots of biscuits. Call me back when you get this.",
+  "models": [
+   {
+    "model": "sherpa-whisper-tiny",
+    "name": "Whisper tiny",
+    "final": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says, \"Hello, if you're coming over tonight, bring biscuits. Lots of biscuits. Call me back when you get this.\"",
+    "wer": 0.0,
+    "first_text_s": 0.911,
+    "partials": 8,
+    "done_s": 10.973
+   },
+   {
+    "model": "sherpa-parakeet-tdt-v3",
+    "name": "Parakeet TDT v3",
+    "final": "Hi, it's Otto from the Voice House. The kettle's on, the lamps are lit, and the owl in the attic says hello. If you're coming over tonight, bring biscuits. Lots of biscuits. Call me back when you get this.",
+    "wer": 0.0,
+    "first_text_s": 0.861,
+    "partials": 9,
+    "done_s": 10.695
+   }
+  ],
+  "chunk_ms": 100
+ }
+}

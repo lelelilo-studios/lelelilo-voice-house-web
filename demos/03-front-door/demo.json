@@ -1,0 +1,52 @@
+{
+ "no": "03",
+ "slug": "03-front-door",
+ "title": "Front Door",
+ "feature": "Strangers by seed",
+ "public": true,
+ "what": "With no voice given, the seed alone picks who speaks. A new seed brings a stranger; an old seed brings the same stranger back, identical down to the last sample.",
+ "inputs": [
+  {
+   "label": "Line",
+   "value": "Hello? Sorry to knock so late. Is this the Voice House?"
+  },
+  {
+   "label": "Seeds",
+   "value": "11, 254, 3077, 4096, 5150, 6502, 7341, 8086, 9001, 31337"
+  },
+  {
+   "label": "Voice",
+   "value": "none: no tags, no reference, no profile"
+  },
+  {
+   "label": "Repeat test",
+   "value": "seed 254: identical, seed 7341: identical"
+  }
+ ],
+ "endpoint": "POST /generate (seed only)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"English\",\n    \"seed\": 254,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "checks": [
+  "Seed 254 asked again: byte-identical audio",
+  "Seed 7341 asked again: byte-identical audio"
+ ],
+ "meter": {
+  "audio_s": 38.48,
+  "gen_s": 2.53,
+  "rtf": 0.066,
+  "wall_s": 4.81,
+  "energy_wh": 0.1159,
+  "above_idle_wh": 0.0649,
+  "avg_w": 86.6,
+  "peak_w": 81.5,
+  "peak_vram_mb": 6531,
+  "gpu_busy_s": 0.86,
+  "takes": 12,
+  "measured": "2026-10-28 11:00:01"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

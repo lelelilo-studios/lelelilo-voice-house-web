@@ -1,0 +1,53 @@
+{
+ "no": "01",
+ "slug": "01-portrait-staircase",
+ "title": "Portrait Staircase",
+ "feature": "Every voice on this PC",
+ "public": true,
+ "what": "Every voice VoiceStudio has on this PC, each saying a line in its own language: no recording, no upload, just a short list of tags (gender, age, pitch, accent) or an engine's built-in voice.",
+ "inputs": [
+  {
+   "label": "Voices",
+   "value": "75: 1 VoiceStudio's demo voice, 8 personality preset, 51 featured ready-made voice, 8 built-in voice of KittenTTS, 7 built-in voice of Supertonic 3"
+  },
+  {
+   "label": "Languages",
+   "value": "English, Spanish, French, German, Italian, Portuguese, Russian, Hindi, Japanese, Korean, Chinese"
+  },
+  {
+   "label": "Engines",
+   "value": "VoiceStudio (OmniVoice), KittenTTS, Supertonic 3"
+  },
+  {
+   "label": "Left out",
+   "value": "Community voices: their origins are unknown, and some may be real people"
+  }
+ ],
+ "endpoint": "POST /generate (instruct = the voice's tags)",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": TEXT,\n    \"language\": \"English\",\n    \"instruct\": \"female, middle-aged, low pitch, british accent\",\n    \"seed\": 42,\n})\nopen(\"take.wav\", \"wb\").write(r.content)",
+ "snippet_openai": "from openai import OpenAI\nclient = OpenAI(base_url=\"http://127.0.0.1:3900/v1\", api_key=\"local\")\naudio = client.audio.speech.create(model=\"omnivoice\", voice=\"VOICE_PROFILE_ID\",\n    input=TEXT,\n    instructions=\"female, middle-aged, low pitch, british accent\")\naudio.write_to_file(\"take.mp3\")",
+ "checks": [
+  "Whisper understood every voice (reseeded the ones it couldn't)",
+  "Same seed and tags give the same voice again"
+ ],
+ "meter": {
+  "audio_s": 326.56,
+  "gen_s": 84.33,
+  "rtf": 0.258,
+  "wall_s": 104.41,
+  "energy_wh": 1.6295,
+  "above_idle_wh": 0.5939,
+  "avg_w": 56.2,
+  "peak_w": 98.6,
+  "peak_vram_mb": 6616,
+  "gpu_busy_s": 15.96,
+  "takes": 83,
+  "measured": "2026-10-28 10:58:56"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

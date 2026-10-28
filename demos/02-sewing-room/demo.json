@@ -1,0 +1,52 @@
+{
+ "no": "02",
+ "slug": "02-sewing-room",
+ "title": "Sewing Room",
+ "feature": "Voice design from words",
+ "public": true,
+ "what": "Describe a voice in plain words and VoiceStudio turns them into its design tags (gender, age, pitch, accent, whisper). Change one tag and the same line comes out older, higher, or whispered.",
+ "inputs": [
+  {
+   "label": "Cards",
+   "value": "A tired old sea captain with a deep, gravelly voice. / A cheerful young woman from Australia who talks a little too fast. / A small boy who is trying very hard to whisper a secret."
+  },
+  {
+   "label": "Tags found",
+   "value": "elderly, low pitch / female, young adult, australian accent / male, whisper"
+  },
+  {
+   "label": "Base voice",
+   "value": "female, middle-aged, moderate pitch, american accent, seed 2212"
+  },
+  {
+   "label": "Changed",
+   "value": "age (5 steps), pitch (5 steps), gender, whisper"
+  }
+ ],
+ "endpoint": "POST /design/describe, then POST /generate (instruct = the tags)",
+ "snippet": "import requests\ntags = requests.post(\"http://127.0.0.1:3900/design/describe\",\n    json={\"description\": \"A tired old sea captain with a deep voice.\"}).json()[\"instruct\"]\nwav = requests.post(\"http://127.0.0.1:3900/generate\", data={\n    \"text\": \"I was stitched together from a few words on a card.\",\n    \"instruct\": tags, \"seed\": 2202}).content",
+ "snippet_openai": "from openai import OpenAI\nclient = OpenAI(base_url=\"http://127.0.0.1:3900/v1\", api_key=\"local\")\naudio = client.audio.speech.create(model=\"omnivoice\", voice=\"VOICE_PROFILE_ID\",\n    input=TEXT,\n    instructions=\"male, elderly, low pitch\")\naudio.write_to_file(\"take.mp3\")",
+ "checks": [
+  "The describe step runs locally, with no language model"
+ ],
+ "meter": {
+  "audio_s": 47.0,
+  "gen_s": 6.17,
+  "rtf": 0.131,
+  "wall_s": 9.23,
+  "energy_wh": 0.1983,
+  "above_idle_wh": 0.1002,
+  "avg_w": 77.4,
+  "peak_w": 79.7,
+  "peak_vram_mb": 6511,
+  "gpu_busy_s": 2.31,
+  "takes": 20,
+  "measured": "2026-10-28 10:59:37"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}

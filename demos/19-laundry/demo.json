@@ -1,0 +1,48 @@
+{
+ "no": "19",
+ "slug": "19-laundry",
+ "title": "The Laundry",
+ "feature": "Voice from the noise",
+ "public": true,
+ "what": "Speech buried under music and a washing machine, pulled back out by VoiceStudio's clean-up, which separates the voice from everything else (Demucs, on this PC).",
+ "inputs": [
+  {
+   "label": "Speech",
+   "value": "chapter two of the bedtime story, 23 s"
+  },
+  {
+   "label": "Noise",
+   "value": "a lounge loop and a washing machine, both synthesised for this room"
+  },
+  {
+   "label": "Score",
+   "value": "-0.5 dB before, 11.4 dB after (SI-SDR against the clean original; higher is cleaner)"
+  }
+ ],
+ "endpoint": "POST /clean-audio",
+ "snippet": "import requests\nr = requests.post(\"http://127.0.0.1:3900/clean-audio\",\n    files={\"audio\": open(\"noisy.wav\", \"rb\")})\nopen(\"voice.wav\", \"wb\").write(r.content)",
+ "checks": [
+  "Cleaner by 11.9 dB (SI-SDR)"
+ ],
+ "work": "cleaned",
+ "meter": {
+  "audio_s": 22.56,
+  "gen_s": 2.92,
+  "rtf": 0.129,
+  "wall_s": 5.06,
+  "energy_wh": 0.0606,
+  "above_idle_wh": 0.0083,
+  "avg_w": 43.1,
+  "peak_w": 65.2,
+  "peak_vram_mb": 5809,
+  "gpu_busy_s": 0.61,
+  "takes": 1,
+  "measured": "2026-10-28 11:11:05"
+ },
+ "machine": {
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER (16 GB)",
+  "voicestudio": "0.5.7",
+  "model": "k2-fsa/OmniVoice"
+ },
+ "made": "2026-10-28"
+}
